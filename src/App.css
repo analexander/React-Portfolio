@@ -8,11 +8,11 @@
 }
 
 body {
-    background-image: url("../src/Images/abstract-painting.jpg");
+    background-image: url("../src/Images/cloudspainting.jpeg");
     background-color: #cccccc;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 h2 {
