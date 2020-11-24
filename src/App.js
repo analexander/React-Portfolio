@@ -6,11 +6,16 @@ import projectData from './projectData';
 import "./App.css";
 
 function App() {
-    const projectObj = projectData.map(projects => <Project key={projects.id} item={projects}/>)
+    const projectObj = projectData.map(project => <Project key={project.id} item={project}/>)
   return (
     <div className="App">
       <Header />
-      <Project projects={projectObj}/>
+      <Project project={projectObj[0].props.item}/>
+      <Project project={projectObj[1].props.item}/>
+      <Project project={projectObj[2].props.item}/>
+      <Project project={projectObj[3].props.item}/>
+      <Project project={projectObj[4].props.item}/>
+      <Project project={projectObj[5].props.item}/>
       <Footer />
     </div>
   )
