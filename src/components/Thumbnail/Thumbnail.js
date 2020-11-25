@@ -7,13 +7,15 @@ import projectData from "../../projectData"
 // The "role" and "aria label" are there to identify the element's purpose as an image for accessibility purposes
 
 function Thumbnail() {
+  const projectImg = projectData.map(project => <projectData key={project.id} src={project.img}/>)
+  console.log(projectImg[0].props.src)
   return (
     <div
       className="thumbnail"
       role="img"
       aria-label="Project Image"
       style={{
-        backgroundImage: `url(${projectData.img})`
+        backgroundImage: `url(${projectImg.img})`
       }}
     />
   );
