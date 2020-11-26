@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.5c4649bd.chunk.css",
-    "main.js": "/React-Portfolio/static/js/main.4ecb9c19.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.4ecb9c19.chunk.js.map",
+    "main.css": "/React-Portfolio/static/css/main.49fb7851.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.45ca5e09.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.45ca5e09.chunk.js.map",
     "runtime-main.js": "/React-Portfolio/static/js/runtime-main.b924f2c9.js",
     "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.b924f2c9.js.map",
     "static/css/2.1a02f21c.chunk.css": "/React-Portfolio/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.c9ae5ed3.chunk.js": "/React-Portfolio/static/js/2.c9ae5ed3.chunk.js",
-    "static/js/2.c9ae5ed3.chunk.js.map": "/React-Portfolio/static/js/2.c9ae5ed3.chunk.js.map",
+    "static/js/2.c5e7cca7.chunk.js": "/React-Portfolio/static/js/2.c5e7cca7.chunk.js",
+    "static/js/2.c5e7cca7.chunk.js.map": "/React-Portfolio/static/js/2.c5e7cca7.chunk.js.map",
     "index.html": "/React-Portfolio/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/React-Portfolio/static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.5c4649bd.chunk.css.map": "/React-Portfolio/static/css/main.5c4649bd.chunk.css.map",
-    "static/js/2.c9ae5ed3.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.c9ae5ed3.chunk.js.LICENSE.txt",
+    "static/css/main.49fb7851.chunk.css.map": "/React-Portfolio/static/css/main.49fb7851.chunk.css.map",
+    "static/js/2.c5e7cca7.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.c5e7cca7.chunk.js.LICENSE.txt",
     "static/media/READMEsample.7afa0d23.png": "/React-Portfolio/static/media/READMEsample.7afa0d23.png",
     "static/media/App.css": "/React-Portfolio/static/media/cloudspainting.78a19f27.jpeg",
     "static/media/habit1 copy.b8e2117e.png": "/React-Portfolio/static/media/habit1 copy.b8e2117e.png",
+    "static/media/headshot-angel.66e67b7d.jpg": "/React-Portfolio/static/media/headshot-angel.66e67b7d.jpg",
     "static/media/note-taker.0717a1ba.png": "/React-Portfolio/static/media/note-taker.0717a1ba.png",
     "static/media/walkthrough copy.404faf1a.gif": "/React-Portfolio/static/media/walkthrough copy.404faf1a.gif",
     "static/media/weather-dashboard.9b226f28.png": "/React-Portfolio/static/media/weather-dashboard.9b226f28.png",
@@ -23,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.b924f2c9.js",
     "static/css/2.1a02f21c.chunk.css",
-    "static/js/2.c9ae5ed3.chunk.js",
-    "static/css/main.5c4649bd.chunk.css",
-    "static/js/main.4ecb9c19.chunk.js"
+    "static/js/2.c5e7cca7.chunk.js",
+    "static/css/main.49fb7851.chunk.css",
+    "static/js/main.45ca5e09.chunk.js"
   ]
 }
