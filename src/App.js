@@ -5,7 +5,8 @@ import Project from "./components/Project"
 import projectData from './projectData';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
-import Portfolio from "./pages/Portfolio";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import AboutMe from "./pages/AboutMe/AboutMe"
 
 function App() {
   // {projectData.map(props => {
@@ -16,12 +17,8 @@ function App() {
     <Router>
     <div className="App">
       <Header />
-      {/* <Project project={projectObj[0].props.item} src={projectObj[0].props.item.img}/>
-      <Project project={projectObj[1].props.item} src={projectObj[1].props.item.img}/>
-      <Project project={projectObj[2].props.item} src={projectObj[2].props.item.img}/>
-      <Project project={projectObj[3].props.item} src={projectObj[3].props.item.img}/>
-      <Project project={projectObj[4].props.item} src={projectObj[4].props.item.img}/>
-      <Project project={projectObj[5].props.item} src={projectObj[5].props.item.img}/> */}
+      <Route exact path ="/" component={AboutMe}/>
+      <Route exact path ="/about" component={AboutMe}/>
       <Route exact path="/portfolio" component={Portfolio} />
       <Footer />
     </div>
