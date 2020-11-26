@@ -3,7 +3,7 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Project from "./components/Project"
 import projectData from './projectData';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import AboutMe from "./pages/AboutMe/AboutMe"
@@ -17,9 +17,11 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
     <div className="App">
       <Header />
+      <Switch>
       <Route exact path ="/" component={AboutMe}/>
       <Route exact path ="/about" component={AboutMe}/>
       <Route exact path="/portfolio" component={Portfolio} />
+      </Switch>
       <Footer />
     </div>
     </Router>
