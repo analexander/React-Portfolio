@@ -14,7 +14,7 @@ function App() {
   // })}
     const projectObj = projectData.map(project => <Project key={project.id} item={project} src={project.img}/>)
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
     <div className="App">
       <Header />
       <Route exact path ="/" component={AboutMe}/>
