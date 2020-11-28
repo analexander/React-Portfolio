@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-    CardDeck, CardText, CardBody, CardLink,
-    CardTitle, CardSubtitle, Row, Col
+    CardText, CardBody, CardLink,
+    CardTitle, CardSubtitle,
 } from 'reactstrap';
 
 const Project = props => {

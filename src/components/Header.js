@@ -17,7 +17,7 @@ const Header = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/React-Portfolio/">Angel Alexander</NavbarBrand>
+        <NavbarBrand href="/">Angel Alexander</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
