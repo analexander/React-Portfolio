@@ -14,7 +14,7 @@ function App() {
   // })}
     const projectObj = projectData.map(project => <Project key={project.id} item={project} src={project.img}/>)
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/React-Portfolio">
     <div className="App">
       <Header />
       <Switch>
