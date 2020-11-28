@@ -2,6 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://analexander.github.io/React-Portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.1",
@@ -16,7 +17,6 @@
     "reactstrap": "^8.7.1",
     "web-vitals": "^0.2.4"
   },
-  "homepage": "https://analexander.github.io/React-Portfolio",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
