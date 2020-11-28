@@ -14,13 +14,14 @@ function App() {
   // })}
     const projectObj = projectData.map(project => <Project key={project.id} item={project} src={project.img}/>)
   return (
-    <Router basename="/React-Portfolio">
+    <Router basename={process.env.PUBLIC_URL}>
     <div className="App">
       <Header />
       <Switch>
-      <Route exact path ="/" component={AboutMe}/>
+      <Route path ="/" exact component={AboutMe}/>
       <Route exact path ="/about/" component={AboutMe}/>
       <Route exact path="/portfolio/" component={Portfolio} />
+      <Route component={() => (<div>404 Not Found</div>)} />
       </Switch>
       <Footer />
     </div>
