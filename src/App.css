@@ -1,58 +1,32 @@
-/* GENERAL STYLES */
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
+.App {
+  text-align: center;
 }
 
-body {
-    background-image: url("../src/Images/cloudspainting.jpeg");
-    background-color: #cccccc;
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: cover;
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
 }
 
-h2 {
-    padding-top: 5px;
-    font-weight: bold;
-    color: #cccccc;
-    letter-spacing: 3px;
+.App-header {
+  background-color: #ffe397;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-h4 {
-    text-align: center;
+.App-link {
+  color: #61dafb;
 }
 
-p {
-    color: #cccccc;
-    font-weight: medium;
-    opacity: 1;
-    letter-spacing: 3px;
-}
-
-.float-left {
-    float: left;
-    max-width: 100%;
-    padding: 10px;
-    
-}
-
-.container {
-    border: 2px solid #cccccc;
-    max-width: 70%;
-    margin-top: 20px;
-    margin-bottom: 100px;
-    padding-bottom: 10px;
-    background-color: rgba(102, 102, 102, 0.808);
-    }
-
-.d-md-none {
-    text-align: center;
-    letter-spacing: 5px;
-    font-size: 30px;
-    color: #cccccc;
-    font-weight: medium;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

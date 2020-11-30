@@ -1,46 +1,51 @@
-import React, { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from 'reactstrap';
+import React, { Component } from 'react';
+export default class Header extends Component {
+  render() {
+    let resumeData = this.props.resumeData;
+    return (
+      <React.Fragment>
+      
+      <header id="home">
+         <nav id="nav-wrap">
+            <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+          <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+            <ul id="nav" className="nav">
+               <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
+               <li><a className="smoothscroll" href="#about">About</a></li>
+             <li><a className="smoothscroll" href="#resume">Resume</a></li>
+               <li><a className="smoothscroll" href="#portfolio">Projects</a></li>
+               <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
+               <li><a className="smoothscroll" href="#contact">Contact</a></li>
+            </ul>
+         </nav>
 
-const Header = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+         <div className="row banner">
+            <div className="banner-text">
+               <h1 className="responsive-headline">{resumeData.name}</h1>
+               <h3 style={{color:'#fff', fontFamily:'sans-serif '}}>{resumeData.roleDescription}
+               </h3>
+               <hr/>
+               <ul className="social">
+                  {
+                    resumeData.socialLinks && resumeData.socialLinks.map(item =>{
+                      return(
+                              <li key={item.name}>
+                                <a href={item.url} target="_blank"><i className={item.className}></i></a>
+                              </li>
+                            )
+                          }
+                    )
+                  }
+               </ul>
+            </div>
+         </div>
 
-  const toggle = () => setIsOpen(!isOpen);
+         <p className="scrolldown">
+            <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
+         </p>
 
-  return (
-    <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Angel Alexander</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-          <NavItem>
-              <NavLink href="/about/">About Me</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/portfolio/">Portfolio</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/analexander" target="_blank">GitHub</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://www.linkedin.com/in/angel-alexander-1171571a5/" target="_blank">LinkedIn</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://docs.google.com/document/d/e/2PACX-1vRIDbxm8dCUo8dCUXuqeNqHuIv-RgfXakkY2m0QcuETLT1fyBXTWUoihEOijebva6fRYUcEJVCUPfjp/pub" target="_blank">Resume</NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </div>
-  );
+      </header>
+      </React.Fragment>
+    );
+  }
 }
-
-export default Header;
