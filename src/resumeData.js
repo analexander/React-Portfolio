@@ -72,22 +72,29 @@ let resumeData = {
       {
         "name":"Habitude",
         "description":"Build new habits and track your progress over time",
-        "imgurl":"images/habit1 copy.png"
+        "imgurl":"images/habit1 copy.png",
+        "deploy":"https://habitudeapp.herokuapp.com/",
+        "github":"https://github.com/analexander/Habitude"
       },
       {
         "name":"README Generator",
         "description":"Generate a professional README for your application",
-        "imgurl":"images/READMEsample.png"
+        "imgurl":"images/READMEsample.png",
+        "github":"https://github.com/analexander/README-Generator"
       },
       {
         "name":"Work Day Scheduler",
         "description":"Schedle your work day using the Moment.JS library",  
-        "imgurl":"images/work-day-scheduler.png"
+        "imgurl":"images/work-day-scheduler.png",
+        "deploy":"https://analexander.github.io/Work-Scheduler/",
+        "github":"https://github.com/analexander/Work-Scheduler"
       },
       {
         "name":"Note-Taker",
         "description":"Take notes with Express.js",
-        "imgurl":"images/note-taker.png"
+        "imgurl":"images/note-taker.png",
+        "deploy":"https://immense-atoll-10163.herokuapp.com/",
+        "github":"https://github.com/analexander/Note-Taker"
       }
     ],
     "testimonials":[
