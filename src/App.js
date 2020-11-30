@@ -13,10 +13,10 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route path={["/", "/about"]}>
+          <Route exact path={["/", "/about"]}>
             <AboutMe />
           </Route>
-          <Route path="/portfolio">
+          <Route exact path={"/portfolio"}>
             <Portfolio />
           </Route>
         </Switch>
