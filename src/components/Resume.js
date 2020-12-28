@@ -1,98 +1,95 @@
 import React, { Component } from 'react';
-export default  class Resume extends Component {
+export default class Resume extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
       <section id="resume">
 
-         <div className="row education">
+        <div className="row education">
 
-            <div className="three columns header-col">
-               <h1><span>Education</span></h1>
-            </div>
+          <div className="three columns header-col">
+            <h1><span>Education</span></h1>
+          </div>
 
-            <div className="nine columns main-col">
-              {
-                resumeData.education && resumeData.education.map((item)=>{
-                  return(
-                    <div className="row item">
-                       <div className="twelve columns">
-                          <h3>{item.UniversityName}</h3>
-                          <p className="info">
-                          {item.specialization}
-                          <span>&bull;</span> <em className="date">{item.MonthOfPassing} {item.YearOfPassing}</em></p>
-                          <p>
-                          {item.Achievements}
-                          </p>
-                       </div>
+          <div className="nine columns main-col">
+            {
+              resumeData.education && resumeData.education.map((item) => {
+                return (
+                  <div className="row item">
+                    <div className="twelve columns">
+                      <h3>{item.UniversityName}</h3>
+                      <p className="info">
+                        {item.specialization}
+                        <span>&bull;</span> <em className="date">{item.MonthOfPassing} {item.YearOfPassing}</em></p>
+                      <p>
+                        {item.Achievements}
+                      </p>
                     </div>
-                  )
-                })
-              }
-            </div>
-         </div>
+                  </div>
+                )
+              })
+            }
+          </div>
+        </div>
         <div className="row work">
-            <div className="three columns header-col">
-               <h1><span>Work</span></h1>
-            </div>
+          <div className="three columns header-col">
+            <h1><span>Work</span></h1>
+          </div>
 
-            <div className="nine columns main-col">
-              {
-                resumeData.work && resumeData.work.map((item) => {
-                  return(
-                    <div className="row item">
-                       <div className="twelve columns">
-                          <h3>{item.CompanyName}</h3>
-                          <p className="info">
-                          {item.specialization}
-                          <span>&bull;</span> <em className="date">{item.MonthOfLeaving} {item.YearOfLeaving}</em></p>
-                          <p>
-                          {item.Achievements}
-                          </p>
-                       </div>
-
+          <div className="nine columns main-col">
+            {
+              resumeData.work && resumeData.work.map((item) => {
+                return (
+                  <div className="row item">
+                    <div className="twelve columns">
+                      <h3>{item.CompanyName}</h3>
+                      <p className="info">
+                        {item.specialization}
+                        <span>&bull;</span> <em className="date">{item.MonthOfLeaving} {item.YearOfLeaving}</em></p>
+                      <p>
+                        {item.Achievements}
+                      </p>
                     </div>
 
-                  )
-                })
-              }
-            </div> 
-         </div>
+                  </div>
+
+                )
+              })
+            }
+          </div>
+        </div>
 
 
-         <div className="row skill">
+        <div className="row skill">
 
-            <div className="three columns header-col">
-               <h1><span>Skills</span></h1>
-            </div>
+          <div className="three columns header-col">
+            <h1><span>Skills</span></h1>
+          </div>
 
-            <div className="nine columns main-col">
+          <div className="nine columns main-col">
 
-               <p>
-               {resumeData.skillsDescription}
-               </p>
+            <p>
+              {resumeData.skillsDescription}
+            </p>
 
-   				<div className="bars">
+            <div className="icons">
 
-   				   <ul className="skills">
-                {
-                  resumeData.skills && resumeData.skills.map((item) => {
-                    return(
-                      <li>
-                      <span className={`bar-expand ${item.skillname.toLowerCase()}`}>
-                      </span><em>{item.skillname}</em>
-                      </li>
-                    )
-                  })
-                }
-
-   					</ul>
+              <i class="fab fa-html5" alt="html5"></i>&nbsp;
+             <i class="fab fa-css3-alt" alt="css3"></i>&nbsp;
+             <i class="fab fa-js-square" alt="javascript"></i>&nbsp;
+             <i class="fab fa-react" alt="reactjs"></i>&nbsp;
+             <i class="fab fa-git" alt="git"></i>&nbsp;
+             <img src={`${process.env.PUBLIC_URL}/images/expressjs.png`} width="90" height="25" alt="express" />&nbsp;
+             <i class="fab fa-github" alt="github"></i>&nbsp;
+             <i class="fab fa-node-js" alt="nodejs"></i>&nbsp;
+             <img src={`${process.env.PUBLIC_URL}/images/mongoDBLeaf.png`} width="45" height="25" alt="mongoDB" />&nbsp;
+             <img src={`${process.env.PUBLIC_URL}/images/mysql.png`} width="90" height="25" alt="mySQL" />&nbsp;
 
    				</div>
 
-   			</div>
+          </div>
 
-         </div>
+        </div>
 
       </section>
     );

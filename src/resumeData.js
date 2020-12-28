@@ -16,7 +16,7 @@ let resumeData = {
           "className":"fa fa-github"
         }
       ],
-    "aboutme":"I am finishing up the Full-Stack Web Development program at Northwestern in December. I am open to work, always keen to learn new things and expand my horizons.",
+    "aboutme":"I recently graduated from the Full-Stack Web Development program at Northwestern. I am open to work, always keen to learn new things and expand my horizons.",
     "address":"Chicago, Illinois",
     "website":"https://github.com/analexander",
     "education":[
@@ -36,7 +36,7 @@ let resumeData = {
     "work":[
       {
         "CompanyName":"Heaven Sent Pet Care",
-        "specialization":"Dog Walker/Trainer/Housesitter",
+        "specialization":"Pet Care Professional",
         "MonthOfLeaving":"June",
         "YearOfLeaving":"2020",
       },
@@ -45,15 +45,17 @@ let resumeData = {
         "specialization":"Auditor/Team Lead",
         "MonthOfLeaving":"September",
         "YearOfLeaving":"2017",
-      }
-    ],
-    "skillsDescription":"My skills",
-    "skills":[
-      {
-        "skillname":"HTML5"
       },
       {
-        "skillname":"CSS3"
+        "CompanyName":"Habitable Spaces",
+        "specialization":"Farm Manager",
+        "MonthOfLeaving":"April",
+        "YearOfLeaving":"2017",
+      }
+    ],
+    "skills":[
+      {
+        "skillname":"HTML5/CSS3"
       },
       {
         "skillname":"Reactjs"
@@ -66,6 +68,9 @@ let resumeData = {
       },
       {
         "skillname":"Mongo"
+      },
+      {
+        "skillname":"MySQL"
       }
     ],
     "portfolio":[
