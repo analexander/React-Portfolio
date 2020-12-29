@@ -22,7 +22,9 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #afafaf; }
+body { background: #afafaf;
+   font-family: 'Montserrat', sans-serif;
+}
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
