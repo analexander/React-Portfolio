@@ -53,26 +53,7 @@ let resumeData = {
         "YearOfLeaving":"2017",
       }
     ],
-    "skills":[
-      {
-        "skillname":"HTML5/CSS3"
-      },
-      {
-        "skillname":"Reactjs"
-      },
-      {
-        "skillname":"Nodejs"
-      },
-      {
-        "skillname":"Express"
-      },
-      {
-        "skillname":"Mongo"
-      },
-      {
-        "skillname":"MySQL"
-      }
-    ],
+
     "portfolio":[
       {
         "name":"Habitude",
@@ -80,6 +61,13 @@ let resumeData = {
         "imgurl":"images/habit1 copy.png",
         "deploy":"https://habitudeapp.herokuapp.com/",
         "github":"https://github.com/analexander/Habitude"
+      },
+      {
+        "name":"Eat-Da-Burger",
+        "description":"A restaurant application that lets users input the names of burgers they'd like to eat.",
+        "imgurl":"images/EatDaBurger.png",
+        "deploy":"https://mysqlnodeburgers.herokuapp.com/",
+        "github":"https://github.com/analexander/Eat-Da-Burger"
       },
       {
         "name":"README Generator",
