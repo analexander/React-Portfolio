@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 export default class Porfolio extends Component {
+  imageClick = () => {
+    console.log('Click!!!!');
+  } 
   render() {
     let resumeData = this.props.resumeData;
     return (
@@ -12,18 +15,18 @@ export default class Porfolio extends Component {
           {
             resumeData.portfolio && resumeData.portfolio.map((item)=>{
               return(
-                <div className="columns portfolio-item">
+                <div className="columns portfolio-item" key={item.name}>
                   <div className="item-wrap">
-                    <a href={item.deploy || item.github} target="_blank" rel="noopener noreferrer">
-                      <img src={`${item.imgurl}`} className="item-img" alt="project screenshot"/>
+                      <img src={`${item.imgurl}`} className="item-img" alt="project screenshot" onClick={this.imageClick} />
                       <div className="overlay">
                         <div className="portfolio-item-meta">
                           <h5>{item.name}</h5>
                           <p>{item.description}</p>
                         </div>
                       </div>
-                    </a>
                   </div>
+                  <a href={item.github} target="_blank" rel="noopener noreferrer">GitHub</a> {'|'} &nbsp;
+                  <a href={item.deploy} target="_blank" rel="noopener noreferrer">Deployed Application</a>
                 </div>
               )
             })
