@@ -4,6 +4,7 @@ export default class Resume extends Component {
     let resumeData = this.props.resumeData;
     return (
       <section id="resume">
+        <h5 id="resumeLink">View my full resume <a href="https://drive.google.com/file/d/1jFEWYqu1Ohyal-cUhpxoFkBVwM7c4EFx/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a></h5>
 
         <div className="row education">
 
@@ -68,16 +69,18 @@ export default class Resume extends Component {
 
             <div className="icons">
 
-              <i className="fab fa-html5 fa-sm" alt="html5"></i>&nbsp;
-             <i className="fab fa-css3-alt fa-sm" alt="css3"></i>&nbsp;
-             <i className="fab fa-js-square fa-sm" alt="javascript"></i>&nbsp;
-             <i className="fab fa-react fa-sm" alt="reactjs"></i>&nbsp;
-             <i className="fab fa-git fa-sm" alt="git"></i>&nbsp;
-             <img src={`${process.env.PUBLIC_URL}/images/expressjs.png`} width="90" height="25" alt="express" />&nbsp;
-             <i className="fab fa-github fa-sm" alt="github"></i>&nbsp;
-             <i className="fab fa-node-js fa-sm" alt="nodejs"></i>&nbsp;
-             <img src={`${process.env.PUBLIC_URL}/images/mongoDBLeaf.png`} width="45" height="25" alt="mongoDB" />&nbsp;
+              <i className="fab fa-html5 fa-sm" alt="HTML5"></i>&nbsp;
+             <i className="fab fa-css3-alt fa-sm" alt="CSS3"></i>&nbsp;
+             <i className="fab fa-js-square fa-sm" alt="Javascript"></i>&nbsp;
+             <img src={`${process.env.PUBLIC_URL}/images/heroku-logo-stroke-black.png`} width="68" height="10" alt="Heroku" />&nbsp;
+             <i className="fab fa-react fa-sm" alt="React.js"></i>&nbsp;
+             <i className="fab fa-git fa-sm" alt="Git"></i>&nbsp;
+             <img src={`${process.env.PUBLIC_URL}/images/expressjs.png`} width="90" height="25" alt="Express.js" />&nbsp;
+             <i className="fab fa-github fa-sm" alt="GitHub"></i>&nbsp;
+             <i className="fab fa-node-js fa-sm" alt="Node.js"></i>&nbsp;
+             <img src={`${process.env.PUBLIC_URL}/images/mongoDBLeaf.png`} width="45" height="25" alt="MongoDB" />&nbsp;
              <img src={`${process.env.PUBLIC_URL}/images/mysql.png`} width="90" height="25" alt="mySQL" />&nbsp;
+             <i class="fab fa-npm" alt="npm"></i>
 
    				</div>
 

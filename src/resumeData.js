@@ -63,8 +63,15 @@ let resumeData = {
         "github":"https://github.com/analexander/Habitude"
       },
       {
+        "name":"Train of Thought",
+        "description":"A journal application that uses facial recognition to read your mood",
+        "imgurl":"images/trainofthought.jpg",
+        "deploy":"https://this-face-space.herokuapp.com/",
+        "github":"https://github.com/analexander/facespace"
+      },
+      {
         "name":"Eat-Da-Burger",
-        "description":"A restaurant application that lets users input the names of burgers they'd like to eat.",
+        "description":"A restaurant application that lets users input the names of burgers they'd like to eat",
         "imgurl":"images/EatDaBurger.png",
         "deploy":"https://mysqlnodeburgers.herokuapp.com/",
         "github":"https://github.com/analexander/Eat-Da-Burger"
@@ -88,6 +95,18 @@ let resumeData = {
         "imgurl":"images/note-taker.png",
         "deploy":"https://immense-atoll-10163.herokuapp.com/",
         "github":"https://github.com/analexander/Note-Taker"
+      },
+      {
+        "name":"Employee Tracker",
+        "description":"Manage your employee information with this command line application",
+        "imgurl":"images/walkthrough copy.gif",
+        "github":"https://github.com/analexander/Employee-Tracker"
+      },
+      {
+        "name":"Template Engine",
+        "description":"Create an HTML file of your employee team roster with this command line application",
+        "imgurl":"images/template-engine.png",
+        "github":"https://github.com/analexander/Template-Engine"
       }
     ],
     "testimonials":[

@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 export default class Porfolio extends Component {
-  imageClick = () => {
-    console.log('Click!!!!');
-  } 
   render() {
     let resumeData = this.props.resumeData;
     return (
@@ -17,7 +14,7 @@ export default class Porfolio extends Component {
               return(
                 <div className="columns portfolio-item" key={item.name}>
                   <div className="item-wrap">
-                      <img src={`${item.imgurl}`} className="item-img" alt="project screenshot" onClick={this.imageClick} />
+                      <img src={`${item.imgurl}`} className="item-img" alt="project screenshot"/>
                       <div className="overlay">
                         <div className="portfolio-item-meta">
                           <h5>{item.name}</h5>
