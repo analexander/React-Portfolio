@@ -84,7 +84,7 @@ let resumeData = {
       },
       {
         "name":"Work Day Scheduler",
-        "description":"Schedle your work day using the Moment.JS library",  
+        "description":"Schedule your work day using the Moment.JS library",  
         "imgurl":"images/work-day-scheduler.png",
         "deploy":"https://analexander.github.io/Work-Scheduler/",
         "github":"https://github.com/analexander/Work-Scheduler"
