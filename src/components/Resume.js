@@ -4,7 +4,7 @@ export default class Resume extends Component {
     let resumeData = this.props.resumeData;
     return (
       <section id="resume">
-        <h5 id="resumeLink">View my full resume <a href="https://docs.google.com/document/d/1_mfypt_qOmoTgt109T1U_jRomW_4e2idfU4P4XjidFo/edit?usp=sharing" target="_blank" rel="noopener noreferrer">here</a></h5>
+        <h5 id="resumeLink">View my full resume <a href="https://drive.google.com/file/d/1pMoOOlp7FJg99nIzRElELqnyYEEDGXi5/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a></h5>
 
         <div className="row education">
 
